@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700&display=swap');
+
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+/* Elementos Base */
+
+body {
+    background: var(--preto);
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .image-container img {
+    padding: 15px;
+}
+
+header .primary-navigation a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header .secondary-navigation a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header .primary-navigation a:hover {
+    color: #fff;
+}
+
+header .secondary-navigation a:hover {
+    color: #fff;
+}
+
+/* Filme Principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0.50)100%), url('https://www.themoviedb.org/t/p/original/zNv4duaroFrXeEHXvMZI3bq1l34.jpg');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Da esquerda para direita */
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.filme-principal .titulo {
+    margin-top: 5%;
+    font-size: 40px;
+}
+
+.botao {
+    background-color: rgba(148, 147, 147, 0.2);
+    border: none;
+    color: white;
+    font-size: 15px;
+
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-right: 10px;
+
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+    transition: .3s ease all;
+}
+
+.botao i {
+    margin-right: 10px;
+}
+
+.container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.filme-principal .container {
+    width: 50%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-filmes {
+    margin-top: 5px;
+}
